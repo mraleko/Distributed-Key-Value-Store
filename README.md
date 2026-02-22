@@ -36,14 +36,14 @@ Educational but production-minded distributed key-value store in Go using Raft c
         |  | n1: Raft + KV    |<--->| n2: Raft + KV    |        |
         |  | WAL: .cluster/...| RPC | WAL: .cluster/...|        |
         |  +------------------+     +------------------+        |
-        |           ^                         ^                  |
-        |           |                         |                  |
+        |           ^                         ^                 |
+        |           |                         |                 |
         |           +-----------<------------+                  |
-        |                       RPC                              |
-        |                  +------------------+                  |
-        |                  | n3: Raft + KV    |                  |
-        |                  | WAL: .cluster/...|                  |
-        |                  +------------------+                  |
+        |                       RPC                             |
+        |                  +------------------+                 |
+        |                  | n3: Raft + KV    |                 |
+        |                  | WAL: .cluster/...|                 |
+        |                  +------------------+                 |
         +-------------------------------------------------------+
 
 Legend:
