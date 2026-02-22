@@ -1,0 +1,14 @@
+# Go build artifacts
+bin/
+*.test
+*.out
+coverage.out
+
+# Local runtime state
+.cluster/
+
+# Local tool caches
+.cache/
+
+# macOS
+.DS_Store
